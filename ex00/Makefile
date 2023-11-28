@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aabel <aabel@student.42.fr>                +#+  +:+       +#+         #
+#    By: babels <babels@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/22 13:58:29 by aabel             #+#    #+#              #
-#    Updated: 2023/11/22 14:03:59 by aabel            ###   ########.fr        #
+#    Updated: 2023/11/28 20:35:58 by babels           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = megaphone
 SOURCES = megaphone.cpp \
 
-OBJECTS = $(SOURCES:.c=.o)
+OBJECTS = $(SOURCES:.cpp=.o)
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror
