@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Phonebook.classe.hpp                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
+/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 14:35:55 by aabel             #+#    #+#             */
-/*   Updated: 2023/11/22 15:10:53 by aabel            ###   ########.fr       */
+/*   Updated: 2023/11/27 21:45:58 by babels           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,14 @@
 
 class Phonebook {
 private:
-    contacts *contacts[8];
-    int nextContactIndex;
+    contacts contacts[8];
 
 public:
-    Phonebook();
+    Phonebook(void);
+    ~Phonebook(void);
     void addContactFromInput();
     void displayContacts() const;
+    int nb_last_added;
 };
 
 #endif // PHONEBOOK_H

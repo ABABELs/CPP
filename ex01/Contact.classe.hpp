@@ -3,33 +3,36 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.classe.hpp                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aabel <aabel@student.42.fr>                +#+  +:+       +#+        */
+/*   By: babels <babels@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 14:33:23 by aabel             #+#    #+#             */
-/*   Updated: 2023/11/22 15:10:23 by aabel            ###   ########.fr       */
+/*   Updated: 2023/11/27 21:40:25 by babels           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CONTACT_CLASSE_HPP
 #define CONTACT_CLASSE_HPP
 
+#include <iostream>
 #include <string>
 
 class contacts {
 private:
-    std::string firstName;
-    std::string lastName;
-    std::string nickname;
-    std::string phoneNumber;
-    std::string darkestSecret;
+    std::string First_Name;
+    std::string Last_Name;
+    std::string Nick_Name;
+    std::string Phone_Number;
+    std::string Darkest_Secret;
 
 public:
-    contacts(std::string fName, std::string lName, std::string nName, std::string phone, std::string secret);
-    std::string getFirstName() const;
-    std::string getLastName() const;
-    std::string getNickname() const;
-    std::string getPhoneNumber() const;
-    std::string getDarkestSecret() const;
+    contacts(void);
+    ~contacts(void);
+    void set_user(void);
+    void get_first_name(void) const;
+    void get_last_name(void) const;
+    void get_nickname(void) const;
+    void get_phone_number(void) const;
+    void get_all_info(void) const;
 };
 
 #endif

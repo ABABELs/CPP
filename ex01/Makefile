@@ -3,17 +3,17 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aabel <aabel@student.42.fr>                +#+  +:+       +#+         #
+#    By: babels <babels@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/22 14:52:46 by aabel             #+#    #+#              #
-#    Updated: 2023/11/22 15:01:47 by aabel            ###   ########.fr        #
+#    Updated: 2023/11/28 10:57:01 by babels           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = phonebook
-SOURCES = Phonebook.classe.cpp main.cpp \
+SOURCES = Phonebook.classe.cpp main.cpp Contact.classe.cpp\
 
-OBJECTS = $(SOURCES:.c=.o)
+OBJECTS = $(SOURCES:.cpp=.o)
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror
